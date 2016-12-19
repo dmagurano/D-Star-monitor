@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "D-Star Monitor",
+  "description": "Real-time D-Star monitor",
+  "version": "0.66",
+  "offline_enabled": true,
+  "minimum_chrome_version": "33",
+  "icons": {
+  
+		  "36": "assets/icons/icon36.png",
+		  "48": "assets/icons/icon48.png",
+		  "78": "assets/icons/icon78.png",
+		  "96": "assets/icons/icon96.png"
+  
+  },
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "sockets": {
+    "udp": {
+      "send": ["*"],
+      "bind": ["*"]
+    }
+  },
+  "permissions": [
+        "<all_urls>"
+    ]
+}
